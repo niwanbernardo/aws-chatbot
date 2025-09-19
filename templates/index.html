@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Chatbot</title>
+    <link rel="stylesheet" href="/aws-chatbot/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>🤖 AWS Chatbot</h1>
+                <p>Consulte informações da sua conta AWS</p>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <strong>🤖 AWS Chatbot:</strong><br>
+                            Olá! Eu posso ajudar você a consultar informações da sua conta AWS.<br><br>
+                            Digite <strong>'ajuda'</strong> para ver os comandos disponíveis.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="input-group">
+                        <input type="text" id="messageInput" placeholder="Digite sua mensagem..." autocomplete="off">
+                        <button id="sendButton">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 AWS Chatbot - Projeto TDC</p>
+        </footer>
+    </div>
+
+    <script src="/aws-chatbot/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and customize the values
+
+# AWS Configuration
+aws_region = "us-east-1"
+
+# Project Configuration
+project_name = "aws-chatbot"
+environment  = "dev"
+
+# Optional: Customize these values for your deployment
+# vpc_cidr = "10.0.0.0/16"
+# enable_deletion_protection = false

@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "project": {
+    "name": "aws-chatbot",
+    "description": "Chatbot web para consultar informações da conta AWS",
+    "language": "python",
+    "framework": "flask"
+  },
+  "rules": {
+    "enabled": true,
+    "files": [
+      "rules/project-rules.md"
+    ]
+  },
+  "mcp": {
+    "enabled": true,
+    "server": "mcp/server.py",
+    "config": "mcp/mcp_config.json"
+  },
+  "testing": {
+    "framework": "pytest",
+    "coverage_threshold": 80,
+    "test_directory": "tests/"
+  },
+  "aws": {
+    "services": ["s3", "ec2", "ce"],
+    "authentication": "sso",
+    "region": "us-east-1"
+  },
+  "deployment": {
+    "iac_tool": "terraform",
+    "iac_directory": "infrastructure/",
+    "target": "aws"
+  }
+}

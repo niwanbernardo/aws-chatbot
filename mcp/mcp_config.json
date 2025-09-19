@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "aws-chatbot": {
+      "command": "python",
+      "args": ["mcp/server.py"],
+      "env": {
+        "AWS_REGION": "us-east-1"
+      }
+    }
+  },
+  "resources": [
+    {
+      "name": "AWS Costs",
+      "uri": "aws://costs",
+      "description": "Informações de custos da conta AWS"
+    },
+    {
+      "name": "S3 Buckets", 
+      "uri": "aws://s3/buckets",
+      "description": "Lista de buckets S3 e objetos"
+    },
+    {
+      "name": "EC2 Instances",
+      "uri": "aws://ec2/instances", 
+      "description": "Status das instâncias EC2"
+    }
+  ],
+  "tools": [
+    {
+      "name": "get_aws_context",
+      "description": "Obter contexto sobre recursos AWS para Amazon Q Developer"
+    }
+  ]
+}
